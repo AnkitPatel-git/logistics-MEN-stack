@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    
+
+    <title>SB Express Layout</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" type="text/css" href="/css/home.css" />
+    <link rel="stylesheet" type="text/css" href="/css/companymaster.css" />
+    <!-- <script src="script.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!--Navbar starts-->
+
+    <%- include("../../Layout/header") %> <%- include("../../Layout/navbar") %>
+
+    <!--Navbar Ends-->
+
+    <div class="container">   
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <div>
+          <div>
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                      <td align="center">
+                          <table width="98%">
+                              <tr>
+                                  <td>
+                                      <div class="MessageBoxWidth">                     
+                                      </div><br><br>
+                                  </td>
+                              </tr>
+                          </table>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td align="center">
+                          <table border="0" cellpadding="0" cellspacing="0" width="98%" class="border_all">
+                              <tr>
+                                  <td align="left" style="font-size: 8px; width: 40%;" class="headertextsetting txtuppper">&nbsp;Fields with <span style="color: Red">*</span> mark are mandatory.
+                                  </td>
+                                  <td align="left" style="width: 60%;" class="headertextsetting txtuppper" height="25px">
+                                      <span >ADMIN >> OFFICE MASTER >> COMPANY MASTER</span>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td align="center" colspan="2" style="position: fixed">
+                                  <div style="display:none;">
+                                      <div style="width: 180px; top: 294px; right: 397px; position: fixed; background-position: center; text-align: center;">
+                                      </div>                
+                                  </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td align="left" colspan="2">
+                                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                              <td colspan="2" valign="top">
+                                                  <fieldset>
+                                                      <legend class="txt_b">Office Details</legend>
+                                                      <table border="0" cellpadding="2" cellspacing="0" width="100%">
+                                                          <tr>
+                                                              <td align="left" class="lblMedium width110">Company Name
+                                                              </td>
+                                                              <td align="left" class="width280">
+                                                                  <input name="CompanyName" type="text"  style="text-transform: uppercase" />
+                                                                  &nbsp;<span style="color: Red">*</span>       
+                                                              </td>
+                                                              <td align="left" class="lblMedium width110">GSTIN
+                                                              </td>
+                                                              <td align="left" class="lblMedium width220">
+                                                                   <input name="GSTNo" type="text" maxlength="30" class="txtboxMedium width180" style="text-transform: uppercase" />
+                                                                  &nbsp;<span style="color: Red">*</span>     
+                                                              </td>
+                                                              <td align="left" class="lblMedium">PAN No
+                                                            </td>
+                                                            <td align="left" class="lblMedium">
+                                                                <input name="PanNo" type="text" maxlength="10" class="txtboxMedium width120" style="text-transform: uppercase" />
+                                                                &nbsp;<span style="color: Red">*</span>
+                                                                <span  style="color:Red;display:none;">InValid PAN Card</span>
+                                                            </td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td align="left" valign="top" class="lblMedium">Email
+                                                            </td>
+                                                            <td align="left" valign="top">
+                                                                <input name="EmailID" type="text"  class="txtboxMedium txtuppper width200" />
+                                                                <span  style="color:Red; visibility:hidden;">Invalid</span>
+                                                            </td>
+                                                            <td align="left" valign="top" class="lblMedium">Website
+                                                            </td>
+                                                            <td align="left" valign="top" colspan="5">
+                                                                <input name="Website" type="text" maxlength="200"  class="txtboxMedium width300" style="text-transform: uppercase" />
+                                                            </td>
+                                                            
+
+                                                        </tr>
+                                                         
+                                                          <tr>
+                                                                <td align="left" class="lblMedium">
+                                                                  Company Logo
+                                                              </td>
+                                                                <td align="left" colspan="5">
+                                                                  <input type="file" name="imgUpload"  />
+                                                              </td>
+                                                          </tr>
+                                                      </table>
+                                                  </fieldset>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td style="width: 70%;" valign="top">
+                                                  <fieldset style="height: 150px">
+                                                      <legend class="txt_b">Address</legend>
+                                                      <table border="0" cellpadding="1" cellspacing="1" width="100%">
+                                                          <tr>
+                                                              <td align="left" valign="top" class="lblMedium">Address
+                                                              </td>
+                                                              <td align="left" valign="top" colspan="5">
+                                                                  <input name="Address" type="text" style="text-transform: uppercase;width:690px;" />
+                                                              </td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td align="left" class="lblMedium width40">Pincode
+                                                              </td>
+                                                              <td align="left" class="width140">
+                                                                  <input name="Pincode" type="text" maxlength="6"  class="txtboxMedium width100"  />
+                                                                  &nbsp;<span style="color: Red">*</span>  
+                                                              </td>
+                                                              <td align="left" class="lblMedium width40">City
+                                                              </td>
+                                                              <td align="left" class="width250">
+                                                                  <input name="City" type="text"   class="txtboxMedium width220"  style="text-transform: uppercase" />   
+                                                                  &nbsp;<span style="color: Red">*</span>         
+                                                              </td>
+                                                              <td align="left" class="lblMedium width40">State
+                                                              </td>
+                                                              <td align="left">
+                                                                  <input name="State" type="text"   class="txtboxMedium width200" style="text-transform: uppercase" />
+                                                                  &nbsp;<span style="color: Red">*</span>  
+                                                              </td>
+                                                          </tr>
+                                                          
+                                                          
+                                                      </table>
+                                                  </fieldset>
+                                              </td>
+                                              <td style="width: 30%;" valign="top">
+                                                  <fieldset style="height: 150px">
+                                                      <legend class="txt_b">Contact Person</legend>
+                                                      <table border="0" cellpadding="1" cellspacing="1" width="100%">
+                                                          <tr>
+                                                              <td align="left" class="lblMedium">Name
+                                                              </td>
+                                                              <td align="left">
+                                                                  <input name="Name" type="text" style="text-transform: uppercase" />
+                                                              </td>
+                                                          </tr>
+                                                        
+                                                          <tr>
+                                                              <td align="left" valign="top" class="lblMedium">Contact
+                                                              </td>
+                                                              <td align="left" valign="top">
+                                                                <input name="Phone" type="text" maxlength="50"  class="txtboxMedium txtuppper width100"    />  
+                                                              </td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td align="left" class="lblMedium">EMail</td>
+                                                              <td align="left" class="lblMedium">
+                                                                  <input name="EmailID" type="text" />
+                                                                  <span  style="color:Red;visibility:hidden;">Invalid</span>
+                                                              </tr>
+                                                      </table>
+                                                  </fieldset>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td align="center" colspan="2" class="vTop10">
+                                                   <span>
+                                                    <button type="button" style="font-weight: bold;" class="width70">Save</button><br><br>
+                                                  </span>
+                                              </td>
+                                          </tr>
+                                      </table>
+                                  </div>    
+                                                                          
+                      </div>
+                </td>
+            </tr>
+          </table>
+      </div>
+      
+    <!--Footer Start-->
+    <%- include("../../Layout/footer") %>
+    <!--Footer ends-->
+
+ 
+  </body>
+</html>

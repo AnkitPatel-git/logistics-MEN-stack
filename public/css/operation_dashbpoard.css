@@ -1,0 +1,785 @@
+body
+{
+    margin:0;
+    padding:0
+}
+p
+{
+    margin:0 10px 10px
+}
+div#header
+{
+    background-color:#F3F2ED;
+    position: fixed;
+    width: 100%;
+        margin: 10px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding-top: 0px;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      position:fixed;
+     } 
+  }
+div#container
+{
+    text-align:left
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:rgb(243, 63, 18);
+  margin-top: 0PX;
+  width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .navbar {
+    width: 10%;
+    overflow: hidden;
+  }
+  .navbar a {
+    width: 100%;
+  }
+  .dropdown{
+    width: 100%;
+  }
+  .dropdown .dropbtn{
+    width: 70%;
+  }
+  .dropdown-content {
+    width: 70%;
+  }
+  .dropdown-content a {
+    width: 50%;
+  }
+  .dropdown-content a:hover {
+    width: 50%;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    width: 50%;
+  }
+  
+  .hover-me:hover.sub-menu-1{
+    width: 50%;
+  }
+ 
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+  height: 50px;
+  margin-top: 10px;
+  width: 100%;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+  
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  height: 100%;
+  color: black;
+  padding: 10px 10px;
+  background-color: inherit;
+  font-family:'Times New Roman', Times, serif;
+  margin-top:  6px;
+  margin-bottom: 0px;
+  color: white;
+  font-weight: bold;
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #f74302;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f74302;
+   box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family:'Times New Roman', Times, serif; 
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 3px 3px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  height: 6%;
+  color: white;
+  font-weight: bold;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(245, 71, 71);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hover-me:hover.sub-menu-1{
+    position: absolute;
+    display: inline-block;
+    margin-top: -40px;
+    margin-left: 120px;   
+}
+div#footer
+{
+    position: fixed;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  background-color: #f74302;
+  height: 25px;
+  color: #f74302;
+  text-align: center;
+}
+
+/* 
+.container {
+  padding: 2px 16px;
+} */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+ 
+}
+
+@media screen and (max-width: 600px) {
+  .columnnew{
+    
+    width: 100%;
+    padding: 0;
+  }
+}
+.columnnew{
+  float:left;
+  width:75%;
+  height: 20%;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+@media screen and (max-width: 600px) {
+  .card1 {
+    
+    width: 100%;
+    padding: 0;
+    display: block;
+  }
+}
+
+.card1{
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 15px;
+  width: 120%;
+  height: 70%;
+}
+
+.hr{
+
+  width: 50%;
+}
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 23%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 77%;
+    background-color: white;
+
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  } 
+table
+{
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+  text-align: center;
+  height: 200px;
+}
+
+caption
+{
+	padding: 5px;
+	text-align: left;
+}
+
+thead tr,
+tfoot tr
+{
+	background: brown; 
+  color: white;
+  font-size: 14px;
+}
+
+th, td
+{
+	border: 1px solid;
+	padding: 5px;
+	text-align: center;
+	vertical-align: top;
+	font-weight: normal;
+  font-size: 14px;
+}
+.scrollable thead,
+.scrollable tfoot,
+.scrollable tbody,
+.scrollable th,
+.scrollable td
+{
+	display: block;
+	width: 100%;
+}
+
+.scrollable thead,
+.scrollable tfoot,
+.scrollable tbody
+{
+	overflow-y: scroll;
+}
+
+.scrollable thead,
+.scrollable tfoot
+{
+	-ms-overflow-style: none;
+}
+
+.scrollable thead::-webkit-scrollbar,
+.scrollable tfoot::-webkit-scrollbar
+{
+	visibility: hidden;
+}
+
+.scrollable tbody
+{
+	max-height: 20em;
+	position: relative;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.scrollable tr
+{
+	display: flex;
+}
+
+.scrollable tbody th,
+.scrollable tbody td
+{
+	border-top: none;
+}
+
+.scrollable th:not(:last-child),
+.scrollable td:not(:last-child)
+{
+	border-right: none;
+}
+
+.card-header{
+    background-color: brown; 
+    color: white;
+    height: 30px;
+    padding-top: 5px;
+  
+  }
+  .card
+  {
+    position: relative;
+    width: 99%;
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-right: 50px;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  
+  }
+  
+  @media screen and (max-width: 400px) {
+    .card {
+      width: 100%;
+      display: block;
+      margin-left: 2px;
+      margin-top: 40px;
+    }
+  }
+   
+input.cmn-toggle-round + label:before {
+  right: 1px;
+  background-color: #ecdfdf;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-transition: background .4s;
+  -moz-transition: background .4s;
+  -o-transition: background .4s;
+  transition: background .4s
+}
+
+input.cmn-toggle-round + label:after {
+  width: 18px;
+  background-color: rgb(231, 12, 12);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  -webkit-transition: margin .4s;
+  -moz-transition: margin .4s;
+  -o-transition: margin .4s;
+  transition: margin .4s
+}
+
+@media(min-width: 768px) and (max-width:991px) {
+  body {
+      overflow-x:hidden
+  }
+
+  div.ruby-menu-demo-description {
+      position: relative;
+      width: 760px;
+      height: 160px;
+      margin: 0 auto;
+      padding: 0
+  }
+
+  div.ruby-menu-demo-description img {
+      max-width: 200px;
+      float: left;
+      margin: 50px 20px 0 0
+  }
+
+  div.ruby-menu-demo-bg-light,div.ruby-menu-demo-bg-dark {
+      width: 760px;
+      font-size: 14px
+  }
+}
+@media(max-width: 767px) {
+  div.ruby-menu-demo-header {
+      width:100%;
+      height: auto
+  }
+  div.ruby-menu-demo-description {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 220px;
+      padding: 10px;
+      text-align: center
+  }
+}
+
+*,:before,:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+body {
+  font-family: 'Open Sans',sans-serif
+}
+
+div.ruby-wrapper {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  background: #f74302;
+}
+
+div.ruby-wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+div.ruby-wrapper > ul {
+  position: relative
+}
+
+ul.ruby-menu > li {
+  float: left;
+  font-size: 14px
+}
+
+ul.ruby-menu > li.ruby-menu-right {
+  float: right
+}
+
+ul.ruby-menu > li > a {
+  display: block;
+  line-height: 30px;
+  padding: 0 10px 0 10px;
+  color: #efefef;
+  text-decoration: none;
+  font-family: "Verdana";
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #f74302;
+}
+
+ul.ruby-menu > li > a:only-child {
+  padding: 0 5px
+}
+
+ul.ruby-menu > li > a:hover,ul.ruby-menu > li:hover > a,ul.ruby-menu > li.ruby-active-menu-item > a:hover,ul.ruby-menu > li.ruby-active-menu-item:hover > a {
+  background: #f1250a
+}
+
+ul.ruby-menu > li > a:only-child:after,ul.ruby-menu > li:hover > a:only-child:after {
+  content: ''
+}
+
+ul.ruby-menu > li.ruby-active-menu-item > a {
+  background: #a42c17
+}
+
+
+ul.ruby-menu > li > a > img {
+  max-width: 16px;
+  display: block
+}
+
+ul.ruby-menu > li.ruby-menu-social > a {
+  padding: 0;
+  width: 30px;
+  padding: 0 8px;
+  font-size: 14px
+}
+
+ul.ruby-menu > li.ruby-menu-social > a > span {
+  display: none
+}
+
+ul.ruby-menu > li.ruby-menu-social.ruby-menu-search > a,ul.ruby-menu.ruby-menu-dividers > li.ruby-menu-social.ruby-menu-search > a {
+  transition: all .5s ease;
+  max-height: 50px;
+  width: 30px;
+  transition: all .5s ease;
+  transition-delay: .3s
+}
+
+
+
+ul.ruby-menu > li.ruby-menu-social.ruby-menu-search > a > span input::-webkit-input-placeholder {
+  color: #efefef
+}
+
+ul.ruby-menu.ruby-menu-dividers > li > a,ul.ruby-menu.ruby-menu-dividers > li.ruby-menu-social > a {
+  border-left: 1px solid #111;
+  border-right: 1px solid #666
+}
+
+
+ul.ruby-menu.ruby-vertical.ruby-menu-dividers > li.ruby-active-menu-item > a {
+  border-bottom: 1px solid #e62f17
+}
+
+ul.ruby-menu > li > ul,ul.ruby-menu > li > ul > li > ul,ul.ruby-menu > li > ul > li > ul > li > ul {
+  position: absolute;
+  -webkit-box-shadow: 0 8px 24px -5px #ccc;
+  -moz-box-shadow: 0 8px 24px -5px #ccc;
+  box-shadow: 0 8px 24px -5px #ccc;
+  border-top: 4px solid #e62f17
+}
+
+ul.ruby-menu > li > ul > li,ul.ruby-menu > li > ul > li > ul > li {
+  position: relative
+}
+
+ul.ruby-menu > li > ul > li > a,ul.ruby-menu > li > ul > li > ul > li > a,ul.ruby-menu > li > ul > li > ul > li > ul > li > a {
+  display: block;
+  width: 200px;
+  line-height: 33px;
+  padding: 0 5px 0 5px;
+  background:  #f74302;
+  color: rgb(241, 239, 239);
+  text-decoration: none;
+  font-family: "Verdana";
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom-color:solid 1px #111;
+}
+
+ul.ruby-menu > li > ul > li:hover > a,ul.ruby-menu > li > ul > li > a:hover,ul.ruby-menu > li > ul > li > ul > li:hover > a,ul.ruby-menu > li > ul > li > ul > li > a:hover,ul.ruby-menu > li > ul > li > ul > li > ul > li:hover > a,ul.ruby-menu > li > ul > li > ul > li > ul > li > a:hover {
+  background:#cf2711
+}
+
+ul.ruby-menu > li > ul > li > a:only-child:after,ul.ruby-menu > li > ul > li > ul > li > a:only-child:after,ul.ruby-menu > li > ul > li > ul > li > ul > li > a:only-child:after {
+  content: ""
+}
+
+ul.ruby-menu > li > ul > li > a .fa,ul.ruby-menu > li > ul > li > ul > li > a .fa,ul.ruby-menu > li > ul > li > ul > li > ul > li > a .fa {
+  position: relative;
+  width: 24px
+}
+
+
+ul.ruby-menu > li > ul > li > ul,ul.ruby-menu > li > ul > li > ul > li > ul {
+  left: 200px;
+  top: -4px;
+  z-index: 100
+}
+
+ul.ruby-menu > li > ul > li.ruby-open-to-left > ul,ul.ruby-menu > li > ul > li > ul > li.ruby-open-to-left > ul {
+  left: auto;
+  right: 170px
+}
+
+@media(min-width: 768px) {
+  
+
+  
+
+  ul.ruby-menu > li > ul,ul.ruby-menu > li > ul > li > ul,ul.ruby-menu > li > ul > li > ul > li > ul {
+      visibility: hidden;
+      opacity: 0
+  }
+
+  ul.ruby-menu > li:hover > ul,ul.ruby-menu > li > ul > li:hover > ul,ul.ruby-menu > li > ul > li > ul > li:hover > ul {
+      visibility: visible;
+      opacity: 1
+  }
+}
+/* 
+html,body
+{
+    margin:0;
+    padding:0
+}
+body
+{
+    font: 76%;
+    text-align:center
+} */
+p
+{
+    margin:0 10px 10px;
+}
+div#header
+{
+    background-color:#F3F2ED;
+    position: fixed;
+    width: 100%;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding-top: 0px;
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      position:fixed;
+     }   
+  }
+div#header h1
+{
+    height:80px;
+    line-height:80px;
+     margin:0;
+     padding-left:10px;
+}
+div#container
+{
+    text-align:left
+}
+div#footer
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f74302;;
+  height: 25px;
+  color: #f74302;;
+  text-align: center;
+}
+.navigation 
+{
+  width: 100%;
+  height: 70px;
+  display: table;
+  position: relative;
+  font-family: inherit;
+  background-color: #fff;
+}
+table{
+  width: 90%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  text-align: center;
+  height: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .table {
+    width: 100%;
+    display: block;
+  }
+}
+.card-header{
+  background-color: brown; 
+  color: white;
+  height: 30px;
+  padding-top: 5px;
+}
+.card
+{
+  position: relative;
+  width: 90%;
+  margin-left: 70px;
+  margin-top: 40px;
+  border: 2px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 100%;
+    display: block;
+    margin-left: 2px;
+    margin-top: 40px;
+  }
+}
+.card-body{
+  text-align: center;
+}
+table
+{
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+  text-align: center;
+  height: 200px;
+}
+caption
+{
+	padding: 5px;
+	text-align: left;
+}
+
+thead tr,
+tfoot tr
+{
+	background: brown; 
+  color: white;
+  font-size: 14px;
+}
+
+th, td
+{
+	border: 1px solid;
+	padding: 5px;
+	text-align: center;
+	vertical-align: top;
+	font-weight: normal;
+  font-size: 14px;
+}
+.scrollable thead,
+.scrollable tfoot,
+.scrollable tbody,
+.scrollable th,
+.scrollable td
+{
+	display: block;
+	width: 100%;
+}
+.scrollable thead,
+.scrollable tfoot,
+.scrollable tbody
+{
+	overflow-y: scroll;
+}
+
+.scrollable thead,
+.scrollable tfoot
+{
+	-ms-overflow-style: none;
+}
+
+.scrollable thead::-webkit-scrollbar,
+.scrollable tfoot::-webkit-scrollbar
+{
+	visibility: hidden;
+}
+.scrollable tbody
+{
+	max-height: 20em;
+	position: relative;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.scrollable tr
+{
+	display: flex;
+}
+.scrollable tbody th,
+.scrollable tbody td
+{
+	border-top: none;
+}
+.scrollable th:not(:last-child),
+.scrollable td:not(:last-child)
+{
+	border-right: none;
+}
+.doc{
+  text-align: right;
+  color:black;
+}
+
+.lblMedium
+{
+	height: 15px;
+	font-size: 8.5pt;
+    font : Arial;
+}

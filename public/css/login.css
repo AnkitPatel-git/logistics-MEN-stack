@@ -1,0 +1,133 @@
+body
+{
+margin:0;
+}
+* {
+  box-sizing: border-box;
+}
+/*Header*/
+@media screen and (max-width: 600px) {
+  .header{
+    width: 100%;
+    float: left;
+    padding: 10px;
+
+  }
+}
+.header {
+    overflow: hidden;
+    background-color:rgb(236, 15, 15);
+ 
+    width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+
+    background-color:rgb(248, 79, 12);
+     .date {
+      font-size: 24px;
+      font-weight: bold;
+      font-family: 'Lato', sans-serif;
+      &#printDate {
+        color: #e74c3c;
+      }
+      &#printDay {
+      
+        color: #2ecc71;
+      }
+     
+     }
+  }
+  .column {
+    float: left;
+    width: 30%;
+    padding-top: -20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 50%;
+      float: left;
+    
+    }
+    
+  }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(248, 79, 12);
+    height: 25px;
+    color:rgb(248, 79, 12);;
+    text-align: center;
+  }
+  .card{
+    width:26%;
+    float: right;
+    height:210px;
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 10px;
+     border:1px solid black;
+     border-radius: 15px;
+     
+  }
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 40%;
+      height: 100px;
+    }
+    
+  }
+  .header1{
+    padding: 10px;
+    height: 30px;
+    width: 100%;
+    background-color: orangered;
+    border:1px solid black;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin: 1px;
+  }
+  /* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 60%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color:orangered;
+    color: white;
+    padding: 5px 5px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width:90px;
+    height: 30px;
+    margin-left: 40px;
+    border:1px solid black; 
+    text-align: center;    
+  }
+  .container1{
+    padding-left: 20px; 
+padding-top: 20px; }

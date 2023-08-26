@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>SB Express Layout</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/css/operation_dashbpoard.css" />
+
+<!-- <script src="script.js"></script> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+<!--Navbar starts-->
+<%- include("../Layout/header") %> 
+<%- include("../Layout/navbar") %> 
+<!--Navbar Ends-->
+
+<div class="row">
+
+  <div class="leftcolumn">
+
+        <div class="columnnew"><br>
+        <div class="card1" style="background-color:#93e9be;">
+        <p>0</p><hr>
+        <p>BOOKING [MONTH/TODAY]</p>
+        </div>
+        </div><br>
+
+        <div class="columnnew">
+        <div class="card1" style="background-color: yellow;">
+        <p>0</p><hr>
+        <p>PENDING DELIVERY</p>
+        </div>
+        </div><br>
+
+        <div class="columnnew">
+        <div class="card1" style="background-color: orange;">
+        <p>0</p><hr>
+        <p>LOAD PRE ALERT</p>
+        </div>
+        </div><br>
+
+        <div class="columnnew">
+        <div class="card1" style="background-color: rgb(218, 45, 131);">
+        <p>0</p><hr>
+        <p>PENDING REVERSE PICKUP</p>
+        </div> 
+        </div><br>
+
+        <div class="columnnew">
+        <div class="card1" style="background-color:purple;">
+        <p>0/0</p><hr>
+        <p>PENDING KYC</p>
+        </div>
+        </div><br>
+
+        <div class="columnnew">
+        <div class="card1" style="background-color: skyblue">
+        <p>0/0</p><hr>
+        <p>CASE OPEN DETAIL</p>
+        </div><br><br>
+        </div><br>
+        </div>
+<!--Footer Start-->
+<%- include("../Layout/footer") %> 
+<!--Footer ends-->
+
+
+
+<script>
+    var date = new Date();
+    document.getElementById("p1").innerHTML = date;	
+$(function () {
+ $('.toggle-menu').click(function(){
+	$('.exo-menu').toggleClass('display');	
+ });
+}); 
+</script>
+</body>
+</html>
